@@ -6,6 +6,7 @@
   <body>
       <div class="main-block">
           <header class="main-header">
+            <div class="main-container">
               <div class="logotip">
                   <a class="logo" href="#">
                   <img src="#" width="137" height="70" alt="City of Sedona">
@@ -27,10 +28,12 @@
                     <a href="#">Гостиницы</a>
                   </li>
               </ul>
+            </div>
           </header>
           <main class="hotels-content">
               <div class="hotels-form">
-                  <form class="search-hotel">
+                <div class="main-container"> 
+                  <form action="#" mathod="get" class="search-hotel">
                       <div class="form-checkboxes-1">
                           <h4>Инфраструктура:</h4>
                           <ul class="checkboxes-list">
@@ -65,10 +68,84 @@
                               </li>
                           </ul>
                       </div>
+                      <div class="range-filter">
+                          <span>Стоимость в сутки(р):</span>
+                      </div>
+                      <div class="price-controls"></div>
+                      <div class="range-controls"></div>
+                      <button type="submit" class="button-form">Показать</button>
                   </form>
+                </div>
+              </div>
+              <div class="sorting-menu">
+                <div class="main-container">
+                  <h4>Найдено: 3</h4>
+                  <span>Сортировка:</span>
+                  <div class="sorting-type">
+                    <ul>
+                      <li>
+                          <a href="#">По цене</a>
+                      </li>
+                      <li>
+                          <a href="#">По типу</a>
+                      </li>
+                      <li>
+                          <a href="#">По рейтингу</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sorting-icon">
+                      <div class="sorting-delta delta-1"><a href="#"></a></div>
+                      <div class="sorting-delta delta-2"><a href="#"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hotel hotel-1">
+                <div class="main-container">
+                    <a href="#">
+                    <img src="#" width="135" height="90"
+                    </a>
+                  <div class="description-hotel">
+                      <h4>Amara resort & spa</h4>
+                      <div class="description">
+                          <span>Гостиница</span>
+                          <span>От 4000 р.</span>
+                      </div>
+                      <div class="button-hotel">
+                      <div>
+                          <a href="#" class="more">Подробнее</a>   
+                      </div>
+                      <div>
+                          <a href="#" class="reservation">Забронировать</a>
+                      </div>
+                      </div>
+                  </div>
+                    <div class="rating-hotel">
+                      <div class="rating-star">    
+                        <ul>
+                            <li>
+                              <div class="star"></div>
+                            </li>
+                            <li>
+                              <div class="star"></div>
+                            </li>
+                            <li>
+                              <div class="star"></div>
+                            </li>
+                            <li>
+                              <div class="star"></div>
+                            </li>
+                        </ul>   
+                      </div>
+                    <div class="rating-mark">
+                        <span>Рейтинг: 8,5</span> 
+                    </div>
+                  </div>
+                </div> 
               </div>
           </main>
           <footer class="main-footer">
+            <div class="main-container">
               <div class="visit-sedona">
                   <a href="#">#Visitsedona</a>
               </div>
@@ -89,6 +166,7 @@
                   <span>Website by</span>
                   <a href="#" class="html-academy"></a>
               </div>
+            </div>
           </footer>
       </div>
     </body>
