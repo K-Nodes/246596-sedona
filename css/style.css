@@ -1,6 +1,14 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, ::after{
+    box-sizing: inherit;
+}
 body{
-    font-size: 14px;
-    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 20px;
     color: #000000;
     font-weight: bold;
     font-family: "PTSans","Calibri",sans-serif;
@@ -18,4 +26,266 @@ h4{
     color: #000000;
     font-weight: bold;
     font-family: "PTSans","Calibri",sans-serif;
+}
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.main-block{
+    outline: 1px solid grey; /*временно*/
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-header{
+    outline: 1px solid grey; /*временно*/
+    position: relative;
+    min-height: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 1px;
+    font-size: 0px;
+}
+.main-menu{
+    outline: 1px solid grey; /*временно*/
+    padding: 0px;
+    padding-top: 12px;
+}
+.main-menu li{
+    outline: 1px solid grey; /*временно*/
+    display: inline-block;
+    width: 240px;
+    height: 100%;
+    vertical-align: top;
+    list-style: none;
+    text-align: center;
+}
+.main-menu li:nth-child(2){
+    margin-right: 96px;
+}
+.main-menu a{
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+.logotip{
+    position: absolute;
+    left: 531px;
+    top: -1px;
+    font-size: 0px;
+    color: transparent;
+    z-index: 10;
+}
+/*.index-content{
+    margin: 0px;
+    font-size: 0px;
+    padding: 0px;
+} */
+.main-image-sedona{
+    outline: 1px solid grey; /*временно*/
+    position: relative;
+    height: 508px;
+    background-image: url(../img/background_photo.jpg);
+}
+.main-image-sedona::before{
+    content:"";
+    position:absolute;
+    bottom: 0px;
+    height: 57px;
+    width: 1200px;
+    background-image: url(../img/Shape.png);
+    background-repeat: no-repeat;
+}
+.description{
+    outline: 1px solid grey; /*временно*/
+    min-height: 216px;
+    padding-top: 60px;
+    padding-bottom: 1px;
+}
+.description p{
+    font-size: 14px;
+}
+.block-advantage{
+    outline: 1px solid red; /*временно*/
+    min-height: 256px;
+    padding: 0px;
+}
+.advantage-left{
+    outline: 1px solid blue; /*временно*/
+    float: left;
+    height: 256px;
+    width: 400px;
+    padding-top:20px;
+    background-color: #81b3d2;
+}
+.advantage-image{
+    height: 256px;
+    width: auto;
+}
+.row-menu{
+    outline: 1px solid grey; /*временно*/
+    min-height: 330px;
+}
+.column-menu{
+    outline: 1px solid red; /*временно*/
+    float: left;
+    min-height: 330px;
+    width: 400px;
+}
+.advantage-right{
+    outline: 1px solid blue; /*временно*/
+    float: right;
+    height: 256px;
+    width: 400px;
+    padding-top:20px;
+    background-color: #81b3d2;
+}
+.row-advantage{
+    outline: 1px solid grey; /*временно*/
+    min-height: 256px;
+}
+.column-advantage{
+    outline: 1px solid red; /*временно*/
+    float: left;
+    min-height: 256px;
+    width: 400px;
+}
+.interested{
+    outline: 1px solid grey; /*временно*/
+    position: relative;
+    min-height: 290px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.button-search{
+    position: absolute;
+    bottom: 0px;
+    left: 316px;
+    width: 567px;
+    height: 85px;
+    background-color: #766357;
+}
+.popup{
+    outline: 1px solid red; /*временно*/
+    position: absolute;
+    top: 290px;
+    left: 316px;
+    min-height: 396px;
+    width: 567px;
+    background-color: #ffffff;
+    z-index: 20;
+}
+.map{
+    outline: 1px solid grey; /*временно*/
+    position: relative;
+    height: 594px;
+    background-image: url(../img/map.jpg);
+}
+.main-footer{
+    outline: 1px solid grey; /*временно*/
+    margin-top: -120px;
+    min-height: 120px;
+    width: 1200px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 1px;
+    text-align: center;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+.visit-sedona{
+    outline: 1px solid red; /*временно*/
+    float: left;
+    width: 245px;
+    margin-right: 82px;
+    opacity: 1;
+}
+.social-list{
+    outline: 1px solid red; /*временно*/
+    float: left;
+    width: 400px;
+    opacity: 1;
+}
+.development{
+    outline: 1px solid red; /*временно*/
+    float: right;
+    width: 245px;
+    opacity: 1;
+}
+.hotels-form{
+    outline: 1px solid grey; /*временно*/
+    min-height: 216px;
+    background-image: url(../img/filter_background.jpg);
+    border-top: 1px solid transparent;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 30px;
+}
+.form-checkboxes-left{
+    outline: 1px solid red; /*временно*/
+    float: left;
+    width: 250px;
+}
+.form-checkboxes-right{
+    outline: 1px solid red; /*временно*/
+    width: 250px;
+    float: left;
+}
+.sorting-menu{
+    outline: 1px solid grey; /*временно*/
+    min-height: 87px;
+    padding-top: 1px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.sorting-menu h4{
+    display: inline-block;
+    vertical-align: top;
+}
+.sorting-menu span{
+    display: inline-block;
+}
+.sorting-type{
+    outline: 1px solid grey; /*временно*/
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+.sorting-type li{
+    display: inline-block;
+    vertical-align: top;
+}
+.sorting-type a{
+    outline: 1px solid red; /*временно*/
+    display: block;
+    width: 100px;
+}
+.hotel{
+    outline: 1px solid grey; /*временно*/
+    min-height: 151px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.hotel a{
+    outline: 1px solid grey; /*временно*/
+    float: left;
+    font-size: 0px;
+    color: transparent;
+}
+.description-hotel{
+    outline: 1px solid grey; /*временно*/
+    float: left;
+    width: 300px;
+}
+.rating-hotel{
+    outline: 1px solid grey; /*временно*/
+    float: right;
+    height: 100px;
+    width: 240px;
+}
+.footer-lining{
+    height: 120px;
+    background-color: #fefefe;
 }
