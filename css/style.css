@@ -12,6 +12,8 @@ body{
     color: #000000;
     font-weight: bold;
     font-family: "PTSans","Calibri",sans-serif;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
 }
 h3{
     font-size: 24px;
@@ -33,40 +35,36 @@ h4{
     clear:both;
 }
 .main-block{
-    outline: 1px solid grey; /*временно*/
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
 }
 .main-header{
-    outline: 1px solid grey; /*временно*/
     position: relative;
     min-height: 56px;
-    padding-left: 72px;
-    padding-right: 72px;
     padding-top: 1px;
     font-size: 0px;
 }
 .main-menu{
-    outline: 1px solid grey; /*временно*/
     padding: 0px;
     padding-top: 12px;
 }
 .main-menu li{
-    outline: 1px solid grey; /*временно*/
-    display: inline-block;
-    width: 240px;
+    float: left;
+    width: 20%;
     height: 100%;
-    vertical-align: top;
     list-style: none;
     text-align: center;
 }
 .main-menu li:nth-child(2){
-    margin-right: 96px;
+    margin-right: 20%;
 }
 .main-menu a{
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     color: #000000;
     text-decoration: none;
 }
@@ -78,16 +76,12 @@ h4{
     color: transparent;
     z-index: 10;
 }
-/*.index-content{
-    margin: 0px;
-    font-size: 0px;
-    padding: 0px;
-} */
 .main-image-sedona{
-    outline: 1px solid grey; /*временно*/
     position: relative;
     height: 508px;
     background-image: url(../img/background_photo.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -57px;
 }
 .main-image-sedona::before{
     content:"";
@@ -98,27 +92,118 @@ h4{
     background-image: url(../img/Shape.png);
     background-repeat: no-repeat;
 }
+.sedona-img{
+    position: absolute;
+    width: 458px;
+    height: 78px;
+    top: 214px;
+    left: 50%;
+    margin-left: -229px;
+}
+.welcome{
+    position: absolute;
+    width: 256px;
+    height: 86px;
+    top: 76px;
+    left: 50%;
+    margin-left: -128px;
+}
+.sucks{
+    position: absolute;
+    width: 296px;
+    height: 80px;
+    top: 348px;
+    left: 50%;
+    margin-left: -148px;
+}
 .description{
-    outline: 1px solid grey; /*временно*/
     min-height: 216px;
     padding-top: 60px;
     padding-bottom: 1px;
+    text-align: center;
+}
+.description h4{
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 590px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 .description p{
     font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 .block-advantage{
     outline: 1px solid red; /*временно*/
     min-height: 256px;
     padding: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+.block-advantage h4{
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+.block-advantage p{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 280px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 .advantage-left{
-    outline: 1px solid blue; /*временно*/
     float: left;
     height: 256px;
     width: 400px;
-    padding-top:20px;
+    padding-top: 25px;
     background-color: #81b3d2;
+}
+.number{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.number::before{
+    content:"";
+    position: absolute;
+    left: 175px;
+    top: 10px;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.number::after{
+    content:"";
+    position: absolute;
+    right: 175px;
+    top: 10px;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.advantage-left h4{
+    margin-bottom: 25px;
+}
+.advantage-left .number{
+    margin-bottom: 20px;
 }
 .advantage-image{
     height: 256px;
