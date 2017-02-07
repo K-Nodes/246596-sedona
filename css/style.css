@@ -40,7 +40,7 @@ h4{
     margin-right: auto;
     background-color: #ffffff;
     color: #000000;
-    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 0 5px -1px #737373;
 }
 .main-header{
     position: relative;
@@ -340,7 +340,6 @@ h4{
     opacity: 0.5;
 }
 .interested{
-    outline: 1px solid grey; /*временно*/
     position: relative;
     min-height: 290px;
     padding-top: 20px;
@@ -377,51 +376,109 @@ h4{
     font-weight: bold;
     color: #ffffff;
 }
-.popup{
-    outline: 1px solid red; /*временно*/
+.popup-form{
     position: absolute;
     top: 290px;
     left: 316px;
     min-height: 396px;
     width: 567px;
+    box-shadow: 0 0 5px -1px #737373;
     background-color: #ffffff;
     z-index: 20;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    padding: 55px;
 }
-.popup-form{
-    outline: 1px solid red; /*временно*/
-    display: block;
-    width: 465px;
-    margin-left: auto;
-    margin-right: auto;
+.popup-form-control{
+    margin-bottom: 30px;
+    position:relative
 }
-.popup-form>input{
+.popup-form-control::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
     display: block;
-    width: 347px;
+    width: 21px;
+    height: 22px;
+    background-position: -20px -130px;
+    opacity: 0.3;
+}
+.popup-form-control input{
+    display: block;
     float: right;
+    width: 346px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
 }
-.popup-form>label{
-   
+.popup-form-control label{
+    float: left;
+    margin-top: 5px;
 }
-.age{
-    outline: 1px solid blue; /*временно*/
+.popup-form-control-half:nth-child(1){
+    width: 50%;
+    float: left;
+}
+.popup-form-control-half:nth-child(2){
+    float: right;
+    width: 176px;
+}
+.popup-form-control-half label{
+    float: left;
+    margin-top: 5px;
+}
+.popup-form-count{
+    float: right;
     display: block;
+    width: 114px;
+    height: 38px;
+    background-color: #f2f2f2;
+    padding: 0px;
 }
-.age input{
+.popup-form-count input{
+    width: 30px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.popup-form-count button{
     display: inline-block;
     vertical-align: top;
-    width: 115px;
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    border: none;
+    opacity: 0.3;
 }
-.age input:first-child{
-    
+.popup-control-bottom{
+    margin-bottom: 53px;
 }
-.age input:last-child{
-    
+.button-popup{
+    display: block;
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.button-popup:hover{
+    background-color: #669ec1;
+}
+.button-popup:active{
+    background-color: #5596be;
+    color: #92bbd7;
 }
 .map{
-    outline: 1px solid grey; /*временно*/
     position: relative;
     height: 594px;
     background-image: url(../img/map.jpg);
@@ -439,17 +496,55 @@ h4{
     opacity: 0.9;
 }
 .visit-sedona{
-    outline: 1px solid red; /*временно*/
     float: left;
     width: 245px;
     margin-right: 82px;
+    margin-left: 5px;
+    margin-top: 45px;
     opacity: 1;
+}
+.visit-sedona a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 .social-list{
     outline: 1px solid red; /*временно*/
     float: left;
     width: 400px;
     opacity: 1;
+}
+.social-net{
+    margin-top: 35px;
+    margin-right: 55px;
+}
+.social-net li{
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    text-align: center;
+    font-size: 0px;
+    color: transparent;
+}
+.social-btn{
+    display:block;
+    width: 46px;
+    height: 48px;
+    background-color: #82b3d3;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+.social-btn-twitter{
+    background-position: -5px -917px;
+}
+.social-btn-fb{
+    background-position: -2px -403px;
+}
+.social-btn-youtube{
+    background-position: -7px -972px;
 }
 .development{
     outline: 1px solid red; /*временно*/

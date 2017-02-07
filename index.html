@@ -101,18 +101,34 @@
                <h3>Заинтересовались?</h3>
                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                <a href="hotels-search.html" class="button-search">Поиск гостиницы в Седоне</a>
-               <div class="popup">
-                   <form class="popup-form clearfix">
-                       <label for="arrival">Дата заезда:</label>
-                       <input type="date" id="arrival">
-                       <label for="departure">Дата выезда:</label>
-                       <input type="date" id="departure">
-                       <div class="age">
-                           <label for="age-adults">Взрослые:</label>
-                           <input class="range" id="age-adults">
-                           <label for="age-children">Дети:</label>
-                           <input class="range" id="age-children">
+               <div class="popup-form">
+                   <form action="#" method="get" class="search-hotel-sedona">
+                       <div class="popup-form-control clearfix">
+                           <label for="arrival">Дата заезда:</label>
+                           <input type="text" id="arrival">
                        </div>
+                       <div class="popup-form-control clearfix">    
+                           <label for="departure">Дата выезда:</label>
+                           <input type="text" id="departure">
+                       </div>
+                       <div class="popup-control-bottom clearfix"> 
+                           <div class="popup-form-control-half">
+                               <label for="age-adults">Взрослые:</label>
+                               <div class="popup-form-count">
+                                   <button>-</button>
+                                   <input type="text" id="age-adults">
+                                   <button>+</button>
+                               </div>
+                           </div> 
+                           <div class="popup-form-control-half">
+                               <label for="age-children">Дети:</label>
+                               <div class="popup-form-count">
+                                   <button>-</button>
+                                   <input type="text" id="age-children">
+                                   <button>+</button>
+                               </div>
+                           </div> 
+                       </div>   
                        <button type="submit" class="button-popup">Найти
                        </button>
                    </form>
