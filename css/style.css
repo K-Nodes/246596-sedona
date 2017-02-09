@@ -464,6 +464,7 @@ h4{
     height: 38px;
     background-color: #f2f2f2;
     border: none;
+    padding: 10px;
 }
 .popup-form-count button{
     display: inline-block;
@@ -814,34 +815,126 @@ h4{
     color: transparent;
 }
 .description-hotel{
-    outline: 1px solid grey; /*временно*/
     float: left;
     width: 400px;
 }
+.description-hotel-link{
+    text-decoration: none;
+}
+.description-hotel-link h4:hover{
+    color: #81b3d2;
+}
+.description-hotel-link h4:active{
+    color: #cacaca;
+}
 .description-hotel h4{
     margin: 0px;
+    margin-top: 23px;
+    margin-bottom: 7px;
+    letter-spacing: 0.5px;
 }
 .description-hotel-more{
-    display:inline-block;
+    display: inline-block;
     vertical-align: top;
-    padding: 0px;
+    margin-right: 4px;
+}
+.description-hotel-more span{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 .description-hotel-more a{
-    height: 28px;
+    display: block;
+    background-color: #81b3d2;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.description-hotel-more a:hover{
+    background-color: #669ec0;
+}
+.description-hotel-more a:active{
+    background-color: #5496bd;
+    color: #88b6d1;
 }
 .description-hotel-reservation{
-    display:inline-block;
+    display: inline-block;
     vertical-align: top;
-    padding: 0px;
+}
+.description-hotel-reservation span{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 .description-hotel-reservation a{
-    height: 28px;
+    display: block;
+    background-color: #766357;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.description-hotel-reservation a:hover{
+    background-color: #604e43;
+}
+.description-hotel-reservation a:active{
+    background-color: #503e33;
+    color: #857871;
 }
 .rating-hotel{
-    outline: 1px solid grey; /*временно*/
     float: right;
-    height: 100px;
     width: 240px;
+    text-align: right;
+}
+.rating-stars{
+    display: block;
+    margin-bottom: 45px;
+    padding-top: 28px;
+}
+.rating-stars span{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 17px;
+    background-position: -20px -1546px;
+}
+.rating-mark{
+    display: inline-block;
+    vertical-align: top;
+}
+.rating-mark span{
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    background-color: #f2f2f2;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 13px;
+    padding-left: 13px;
 }
 .footer-lining{
     height: 120px;
