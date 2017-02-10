@@ -33,7 +33,7 @@
        <main class="hotels-content">
            <div class="hotels-form clearfix">
                <form action="#" method="get">
-                   <div class="form-checkboxes-left">
+                   <div class="form-checkboxes form-checkboxes-left">
                        <h4>Инфраструктура:</h4>
                        <ul class="checkboxes-list">
                            <li>
@@ -50,7 +50,7 @@
                            </li>
                        </ul>
                    </div>
-                   <div class="form-checkboxes-right">
+                   <div class="form-checkboxes form-checkboxes-right">
                        <h4>Тип жилья:</h4>
                        <ul class="checkboxes-list">
                            <li>
@@ -68,11 +68,24 @@
                        </ul>
                    </div>
                    <div class="range-filter">
-                       <span>Стоимость в сутки(р):</span>
+                       <span>Стоимость в сутки (р):</span>
+                       <div class="price-controls">
+                           <label for="min-price">от
+                               <input type="text" name="min-price" value="0">
+                           </label>
+                           <label for="max-price">до
+                               <input type="text" name="max-price" value="3000">
+                           </label>
+                       </div>
+                       <div class="range-controls">
+                           <div class="scale">
+                               <div class="bar"></div>
+                           </div>
+                           <div class="range-toggle range-toggle-min"></div>
+                           <div class="range-toggle range-toggle-max"></div>
+                       </div>
+                       <button type="submit" class="button-form">Показать</button>
                    </div>
-                   <div class="price-controls"></div>
-                   <div class="range-controls"></div>
-                   <button type="submit" class="button-form">Показать</button>
                </form>
            </div>
            <div class="sorting-menu">

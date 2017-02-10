@@ -11,7 +11,7 @@ body{
     line-height: 20px;
     color: #000000;
     font-weight: bold;
-    font-family: "PTSans","Calibri",sans-serif;
+    font-family: 'PT Sans', 'Calibri', sans-serif;
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
@@ -20,14 +20,14 @@ h3{
     line-height: 30px;
     color: #000000;
     font-weight: bold;
-    font-family: "PTSans","Calibri",sans-serif;
+    font-family: 'PT Sans', 'Calibri', sans-serif;
 }
 h4{
     font-size: 21px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: "PTSans","Calibri",sans-serif;
+    font-family: 'PT Sans', 'Calibri', sans-serif;
 }
 .clearfix::after{
     content: "";
@@ -637,49 +637,122 @@ h4{
     background-position: -20px -1069px;
 }
 .hotels-form{
-    outline: 1px solid grey; /*временно*/
     min-height: 216px;
     background-image: url(../img/filter_background.jpg);
+    background-position: 0px -60px;
+    background-repeat: no-repeat;
     border-top: 1px solid transparent;
     padding-left: 72px;
     padding-right: 72px;
-    padding-top: 30px;
+    padding-top: 25px;
+}
+.form-checkboxes{
+    float: left;
+    width: 250px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
 }
 .form-checkboxes-left{
-    outline: 1px solid red; /*временно*/
-    float: left;
-    width: 250px;
+    margin-right: 2px;
+}
+.form-checkboxes h4{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.checkboxes-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.checkboxes-list li{
+    margin-top: 25px;
+}
+.checkboxes-list label{
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
 }
-.form-checkboxes-left h4{
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: bold;
+.form-checkboxes-right label{
+    padding-left: 45px;
 }
-.form-checkboxes-right{
-    outline: 1px solid red; /*временно*/
-    width: 250px;
+.checkboxes-list input+label::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-position: -20px -316px;
+}
+.checkboxes-list input:checked+label::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+    background-position: -20px -378px;
+}
+.checkboxes-list input{
+    display: none;
+}
+.range-filter{
+    outline: 1px solid grey;
     float: left;
+    width: 330px;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-}
-.form-checkboxes-right h4{
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: bold;
+    text-transform: uppercase;
 }
 .range-filter span{
     color: #ffffff;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
+}
+.price-controls{
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0px;
+    color: transparent;
+    padding: 0px;
+}
+.price-controls label{
+    outline: 1px solid blue;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    padding: 0px;
+}
+.price-controls input{
+    outline: 1px solid red;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    background: none;
+    border: none;
 }
 .sorting-menu{
     position: relative;
