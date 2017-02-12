@@ -1,0 +1,185 @@
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-big-mac {
+    width: 74px;
+    height: 70px;
+    background-position: -20px -20px;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -20px -130px;
+}
+
+.sprite-calendar-blue {
+    width: 21px;
+    height: 22px;
+    background-position: -20px -192px;
+}
+
+.sprite-calendar-gray {
+    width: 21px;
+    height: 22px;
+    background-position: -20px -254px;
+}
+
+.sprite-checkbox-off {
+    width: 22px;
+    height: 22px;
+    background-position: -20px -316px;
+}
+
+.sprite-checkbox-on {
+    width: 26px;
+    height: 22px;
+    background-position: -20px -378px;
+}
+
+.sprite-delta-bottom {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -440px;
+}
+
+.sprite-delta-bottom-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -490px;
+}
+
+.sprite-delta-bottom-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -540px;
+}
+
+.sprite-delta-top {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -590px;
+}
+
+.sprite-delta-top-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -640px;
+}
+
+.sprite-delta-top-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -690px;
+}
+
+.sprite-facebook-icon {
+    width: 10px;
+    height: 19px;
+    background-position: -20px -740px;
+}
+
+.sprite-house {
+    width: 75px;
+    height: 72px;
+    background-position: -20px -799px;
+}
+
+.sprite-html_academy-logo {
+    width: 113px;
+    height: 39px;
+    background-position: -20px -911px;
+}
+
+.sprite-html_academy-logo-blue {
+    width: 113px;
+    height: 39px;
+    background-position: -20px -990px;
+}
+
+.sprite-html_academy-logo-grey {
+    width: 113px;
+    height: 39px;
+    background-position: -20px -1069px;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -20px -1148px;
+}
+
+.sprite-minus-blue {
+    width: 12px;
+    height: 3px;
+    background-position: -20px -1191px;
+}
+
+.sprite-minus-gray {
+    width: 12px;
+    height: 3px;
+    background-position: -20px -1234px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -20px -1277px;
+}
+
+.sprite-plus-blue {
+    width: 11px;
+    height: 11px;
+    background-position: -20px -1328px;
+}
+
+.sprite-plus-gray {
+    width: 11px;
+    height: 11px;
+    background-position: -20px -1379px;
+}
+
+.sprite-present {
+    width: 64px;
+    height: 76px;
+    background-position: -20px -1430px;
+}
+
+.sprite-star {
+    width: 18px;
+    height: 17px;
+    background-position: -20px -1546px;
+}
+
+.sprite-twitter-icon {
+    width: 17px;
+    height: 15px;
+    background-position: -20px -1603px;
+}
+
+.sprite-youtube-icon {
+    width: 20px;
+    height: 16px;
+    background-position: -20px -1658px;
+}
+
+.sprite-z-facebook-icon-gray {
+    width: 10px;
+    height: 19px;
+    background-position: -20px -1714px;
+}
+
+.sprite-z-twitter-icon-gray {
+    width: 17px;
+    height: 15px;
+    background-position: -20px -1773px;
+}
+
+.sprite-z-youtube-icon-gray {
+    width: 20px;
+    height: 16px;
+    background-position: -20px -1828px;
+}
