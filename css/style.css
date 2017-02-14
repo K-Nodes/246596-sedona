@@ -93,6 +93,7 @@ h4{
     background-image: url(../img/background_photo.jpg);
     background-repeat: no-repeat;
     background-position: 0px -57px;
+    background-color: #d4e4ee;
 }
 .main-image-sedona::before{
     content: "";
@@ -181,28 +182,7 @@ h4{
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-}
-.number::before{
-    content: "";
-    position: absolute;
-    left: 175px;
-    top: 10px;
-    display: block;
-    width: 9px;
-    height: 2px;
-    background-color: #ffffff;
-    opacity: 0.5;
-}
-.number::after{
-    content: "";
-    position: absolute;
-    right: 175px;
-    top: 10px;
-    display: block;
-    width: 9px;
-    height: 2px;
-    background-color: #ffffff;
-    opacity: 0.5;
+    color: #ffffff;
 }
 .advantage-left h4{
     margin-bottom: 25px;
@@ -540,6 +520,8 @@ h4{
     position: relative;
     height: 594px;
     background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-color: #f2f1ef;
 }
 .main-footer{
     margin-top: -120px;
@@ -657,6 +639,7 @@ h4{
     background-image: url(../img/filter_background.jpg);
     background-position: 0px -60px;
     background-repeat: no-repeat;
+    background-color: #809dbd;
     border-top: 1px solid transparent;
     padding-left: 72px;
     padding-right: 72px;
