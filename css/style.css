@@ -309,43 +309,32 @@ h4{
     min-height: 256px;
     width: 400px;
     text-align: center;
+    padding: 0px 60px;
     padding-top: 20px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1px;
 }
 .column-advantage h4{
     display: block;
-    width: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
 }
 .number-row{
-    margin-bottom: 22px;
+    display: block;
+    margin-bottom: 23px;
+    font-size: 14px;
+    font-weight: normal;
 }
 .column-advantage p{
     display: block;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 14px;
-    line-height: 21px;
     font-weight: normal;
-}
-.number-row::before{
-   background-color: #000000;
-   opacity: 0.5;
-}
-.number-row::after{
-    background-color: #000000;
-    opacity: 0.5;
 }
 .interested{
     position: relative;
     min-height: 290px;
-    padding-top: 20px;
+    padding-top: 22px;
     padding-bottom: 1px;
     text-align: center;
 }
