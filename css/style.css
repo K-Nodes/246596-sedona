@@ -349,6 +349,7 @@ h4{
     color: #ffffff;
 }
 .popup-form{
+    display: none;
     position: absolute;
     top: 290px;
     left: 316px;
@@ -363,6 +364,10 @@ h4{
     font-weight: bold;
     color: #000000;
     padding: 55px;
+}
+.popup-form-show{
+    display: block;
+    animation: bounce 0.4s;
 }
 ::-webkit-input-placeholder{
     color: #000000;
@@ -515,6 +520,41 @@ h4{
 .button-popup:active{
     background-color: #5596be;
     color: #92bbd7;
+}
+@keyframes bounce {
+    0% {
+    transform: translateY(600px);
+    }
+    10% {
+    transform: translateY(540px);
+    }
+    20% {
+    transform: translateY(480px);
+    }
+    30% {
+    transform: translateY(420px);
+    }
+    40% {
+    transform: translateY(360px);
+    }
+    50% {
+    transform: translateY(300px);
+    }
+    60% {
+    transform: translateY(240px);
+    }
+    70% {
+    transform: translateY(180px);
+    }
+    80% {
+    transform: translateY(120px);
+    }
+    90% {
+    transform: translateY(60px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
 }
 .map{
     position: relative;
@@ -897,9 +937,8 @@ h4{
     border-bottom: none;
 }
 .sorting-icon{
-    position: absolute;
-    right: 71px;
-    top: 34px;
+    float: right;
+    margin-top: 35px;
     display: inline-block;
     vertical-align: top;
     width: 50px;
@@ -913,7 +952,7 @@ h4{
     display: inline-block;
     vertical-align: top;
     margin: 0px;
-    margin-left: 10px;
+    margin-left: 9px;
     width: 11px;
 }
 .delta-top a{
