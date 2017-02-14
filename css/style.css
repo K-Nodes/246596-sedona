@@ -93,7 +93,6 @@ h4{
     background-image: url(../img/background_photo.jpg);
     background-repeat: no-repeat;
     background-position: 0px -57px;
-    background-color: #d7e5f0;
 }
 .main-image-sedona::before{
     content: "";
@@ -541,7 +540,6 @@ h4{
     position: relative;
     height: 594px;
     background-image: url(../img/map.jpg);
-    background-color: #f2f1ef;
 }
 .main-footer{
     margin-top: -120px;
@@ -659,7 +657,6 @@ h4{
     background-image: url(../img/filter_background.jpg);
     background-position: 0px -60px;
     background-repeat: no-repeat;
-    background-color: #4279a2;
     border-top: 1px solid transparent;
     padding-left: 72px;
     padding-right: 72px;
