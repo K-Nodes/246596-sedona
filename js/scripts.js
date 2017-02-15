@@ -9,7 +9,7 @@ var StorageChildren = localStorage.getItem("children");
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
-    popup.classList.toggle("popup-form-show");
+    popup.classList.toggle("popup-form-none");
     popup.classList.remove("popup-form-error");
     
     if (StorageAdults) {
@@ -35,8 +35,8 @@ form.addEventListener("submit", function(event) {
 window.addEventListener("keydown", function(event)
     {
     if (event.keyCode === 27) {
-    if (popup.classList.contains("popup-form-show")) {
-        popup.classList.remove("popup-form-show");
+    if (popup.classList.contains("popup-form")) {
+        popup.classList.add("popup-form-none");
         popup.classList.remove("popup-form-error");
     }
     }

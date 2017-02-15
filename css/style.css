@@ -349,8 +349,8 @@ h4{
     color: #ffffff;
 }
 .popup-form{
-    display: none;
     position: absolute;
+    display: block;
     top: 290px;
     left: 316px;
     min-height: 396px;
@@ -364,10 +364,10 @@ h4{
     font-weight: bold;
     color: #000000;
     padding: 55px;
-}
-.popup-form-show{
-    display: block;
     animation: entry 0.5s;
+}
+.popup-form-none{
+    display: none;
 }
 .popup-form-error{
     animation: shake 0.5s;
