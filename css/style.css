@@ -367,7 +367,10 @@ h4{
 }
 .popup-form-show{
     display: block;
-    animation: bounce 0.4s;
+    animation: entry 0.5s;
+}
+.popup-form-error{
+    animation: shake 0.5s;
 }
 ::-webkit-input-placeholder{
     color: #000000;
@@ -521,39 +524,50 @@ h4{
     background-color: #5596be;
     color: #92bbd7;
 }
-@keyframes bounce {
+@keyframes entry{
     0% {
-    transform: translateY(600px);
+    transform: translateY(750px);
     }
     10% {
-    transform: translateY(540px);
+    transform: translateY(675px);
     }
     20% {
-    transform: translateY(480px);
+    transform: translateY(600px);
     }
     30% {
-    transform: translateY(420px);
+    transform: translateY(525px);
     }
     40% {
-    transform: translateY(360px);
+    transform: translateY(450px);
     }
     50% {
-    transform: translateY(300px);
+    transform: translateY(375px);
     }
     60% {
-    transform: translateY(240px);
+    transform: translateY(300px);
     }
     70% {
-    transform: translateY(180px);
+    transform: translateY(225px);
     }
     80% {
-    transform: translateY(120px);
+    transform: translateY(150px);
     }
     90% {
-    transform: translateY(60px);
+    transform: translateY(75px);
     }
     100% {
     transform: translateY(0px);
+    }
+}
+@keyframes shake{
+    0%,100%{
+    transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90%{
+    transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80%{
+    transform: translateX(10px);
     }
 }
 .map{
@@ -866,7 +880,6 @@ h4{
     color: #000000;
 }
 .sorting-menu{
-    position: relative;
     border-bottom: 1px solid #e5e5e5;
     min-height: 87px;
     padding-top: 1px;
