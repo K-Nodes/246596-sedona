@@ -11,7 +11,7 @@ body{
     line-height: 20px;
     color: #000000;
     font-weight: bold;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
@@ -20,14 +20,14 @@ h3{
     line-height: 30px;
     color: #000000;
     font-weight: bold;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 h4{
     font-size: 21px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .clearfix::after{
     content: "";
@@ -101,32 +101,8 @@ h4{
     bottom: 0px;
     height: 57px;
     width: 1200px;
-    background-image: url(../img/Shape.png);
+    background-image: url(../img/shape.png);
     background-repeat: no-repeat;
-}
-.sedona-img{
-    position: absolute;
-    width: 458px;
-    height: 78px;
-    top: 214px;
-    left: 50%;
-    margin-left: -229px;
-}
-.welcome{
-    position: absolute;
-    width: 256px;
-    height: 86px;
-    top: 76px;
-    left: 50%;
-    margin-left: -128px;
-}
-.sucks{
-    position: absolute;
-    width: 296px;
-    height: 80px;
-    top: 348px;
-    left: 50%;
-    margin-left: -148px;
 }
 .description{
     min-height: 216px;
@@ -152,7 +128,6 @@ h4{
     color: #ffffff;
 }
 .block-advantage h4{
-    display: block;
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
@@ -163,7 +138,6 @@ h4{
 .block-advantage p{
     margin-left: auto;
     margin-right: auto;
-    display: block;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -255,7 +229,6 @@ h4{
     color: #000000;
 }
 .column-menu p{
-    display: block;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -294,8 +267,10 @@ h4{
     letter-spacing: 0.1px;
 }
 .column-advantage h4{
-    display: block;
     margin-bottom: 21px;
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
@@ -307,7 +282,6 @@ h4{
     font-weight: normal;
 }
 .column-advantage p{
-    display: block;
     font-size: 14px;
     font-weight: normal;
 }
@@ -325,7 +299,6 @@ h4{
     margin-bottom: 27px;
 }
 .interested p{
-    display: block;
     width: 480px;
     margin-left: auto;
     margin-right: auto;
@@ -340,17 +313,19 @@ h4{
     width: 567px;
     height: 85px;
     padding-top: 30px;
+    padding-bottom: 32px;
     background-color: #766357;
-    text-decoration: none;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 .popup-form{
     position: absolute;
-    display: block;
     top: 290px;
     left: 316px;
     min-height: 396px;
@@ -358,7 +333,7 @@ h4{
     box-shadow: 0 0 5px -1px #737373;
     background-color: #ffffff;
     z-index: 20;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -386,25 +361,23 @@ h4{
 }
 .popup-form-control{
     margin-bottom: 30px;
-    position:relative
+    position: relative;
 }
-.popup-form-control::before{
-    content: "";
+.popup-calendar{
     position: absolute;
     top: 7px;
     right: 10px;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    display: block;
     width: 21px;
     height: 22px;
     background-position: -20px -254px;
     cursor: pointer;
 }
-.popup-form-control:hover::before{
+.popup-calendar:hover{
     background-position: -20px -130px;
 }
-.popup-form-control:active::before{
+.popup-calendar:active{
     background-position: -20px -192px;
 }
 .popup-form-control input{
@@ -415,9 +388,9 @@ h4{
     border: none;
     background-color: #f2f2f2;
     padding: 12px;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 14px;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
@@ -447,7 +420,6 @@ h4{
 }
 .popup-form-count{
     float: right;
-    display: block;
     width: 114px;
     height: 38px;
     background-color: #f2f2f2;
@@ -461,9 +433,9 @@ h4{
     border: none;
     padding: 10px;
     padding-left: 15px;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 14px;
     font-weight: bold;
     color: #000000;
 }
@@ -509,7 +481,7 @@ h4{
     width: 458px;
     height: 58px;
     background-color: #81b3d2;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     color: #ffffff;
     font-size: 21px;
     line-height: 26px;
@@ -725,6 +697,7 @@ h4{
 }
 .checkboxes-list li{
     margin-top: 25px;
+    width: 160px;
 }
 .checkboxes-list label{
     position: relative;
@@ -866,7 +839,7 @@ h4{
     height: 36px;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -1050,7 +1023,7 @@ h4{
     display: block;
     background-color: #81b3d2;
     text-decoration: none;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -1082,7 +1055,7 @@ h4{
     display: block;
     background-color: #766357;
     text-decoration: none;
-    font-family: 'PT Sans', 'Calibri', sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;

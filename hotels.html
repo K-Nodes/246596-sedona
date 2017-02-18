@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main-block">
@@ -17,7 +17,7 @@
             </div>
             <ul class="main-menu">
                 <li>
-                    <a href="index.html">Информация</a>
+                    <a href="#">Информация</a>
                 </li>
                 <li>
                     <a href="#">Фото и видео</a>
@@ -32,12 +32,12 @@
         </header>
         <main class="hotels-content">
             <div class="hotels-form clearfix">
-                <form action="#" method="get">
+                <form action="#" method="get" target="_blank">
                     <div class="form-checkboxes form-checkboxes-left">
                         <h4>Инфраструктура:</h4>
                         <ul class="checkboxes-list">
                             <li>
-                                <input class="input-checkbox" type="checkbox" name="pool" id="pool">
+                                <input class="input-checkbox" type="checkbox" name="pool" id="pool" checked>
                                 <label for="pool">Бассейн</label>
                             </li>
                             <li>
@@ -54,15 +54,15 @@
                         <h4>Тип жилья:</h4>
                         <ul class="checkboxes-list">
                             <li>
-                                <input class="input-checkbox" type="checkbox" name="hotel" id="hotel">
+                                <input class="input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
                                 <label for="hotel">Гостиница</label>
                             </li>
                             <li>
-                                <input class="input-checkbox" type="checkbox" name="motel" id="motel">
+                                <input class="input-checkbox" type="checkbox" name="motel" id="motel" checked>
                                 <label for="motel">Мотель</label>
                             </li>
                             <li>
-                                <input class="input-checkbox" type="checkbox" name="apartments" id="apartments">
+                                <input class="input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
                                 <label for="apartments">Апартаменты</label>
                             </li>
                         </ul>
@@ -70,11 +70,11 @@
                     <div class="range-filter">
                         <span>Стоимость в сутки (р):</span>
                         <div class="price-controls">
-                            <label for="min-price">от
-                                <input type="text" name="min-price" id="min-price" value="0">
+                            <label>от
+                                <input type="text" name="min-price" value="0">
                             </label>
-                            <label for="max-price">до
-                                <input type="text" name="max-price" id="max-price" value="3000">
+                            <label>до
+                                <input type="text" name="max-price" value="3000">
                             </label>
                         </div>
                         <div class="range-controls">
