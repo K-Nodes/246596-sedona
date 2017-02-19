@@ -15,20 +15,6 @@ body{
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
-h3{
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans", "Calibri", sans-serif;
-}
-h4{
-    font-size: 21px;
-    line-height: 26px;
-    color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans", "Calibri", sans-serif;
-}
 .clearfix::after{
     content: "";
     display:table;
@@ -53,7 +39,8 @@ h4{
     padding-top: 12px;
 }
 .main-menu li{
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 20%;
     height: 100%;
     list-style: none;
@@ -62,12 +49,17 @@ h4{
 .main-menu li:nth-child(2){
     margin-right: 20%;
 }
+.main-menu li:nth-child(3){
+    padding-left: 5px;
+}
+.main-menu li:nth-child(4){
+    padding-left: 12px;
+}
 .main-menu a{
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
-    letter-spacing: 0.5px;
     text-decoration: none;
 }
 .main-menu a:hover{
@@ -79,7 +71,13 @@ h4{
 .main-menu .locate{
     color: #766357;
 }
-.logotip{
+.main-menu .locate:hover{
+    color: #766357;
+}
+.main-menu .locate:active{
+    color: #766357;
+}
+.header-logotype{
     position: absolute;
     left: 531px;
     top: -1px;
@@ -115,6 +113,11 @@ h4{
     margin-left: auto;
     margin-right: auto;
     width: 590px;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .description p{
     font-size: 14px;
@@ -134,6 +137,7 @@ h4{
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .block-advantage p{
     margin-left: auto;
@@ -161,6 +165,11 @@ h4{
 .advantage-left h4{
     margin-bottom: 25px;
     width: 125px;
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .advantage-left .number{
     margin-bottom: 20px;
@@ -180,7 +189,7 @@ h4{
     float: left;
     min-height: 330px;
     width: 400px;
-    padding-top: 130px;
+    padding-top: 132px;
     text-align: center;
 }
 .housing::before{
@@ -221,7 +230,7 @@ h4{
 }
 .column-menu a{
     display: block;
-    margin-bottom: -7px;
+    margin-bottom: -5px;
     text-decoration: none;
     font-size: 21px;
     line-height: 21px;
@@ -246,6 +255,11 @@ h4{
 .advantage-right h4{
     margin-bottom: 25px;
     width: 155px;
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .advantage-right .number{
     margin-bottom: 20px;
@@ -274,6 +288,8 @@ h4{
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    color: #000000;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .number-row{
     display: block;
@@ -297,6 +313,9 @@ h4{
     line-height: 30px;
     font-weight: bold;
     margin-bottom: 27px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .interested p{
     width: 480px;
@@ -488,6 +507,7 @@ h4{
     font-weight: bold;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 .button-popup:hover{
     background-color: #669ec1;
@@ -689,6 +709,7 @@ h4{
     font-weight: bold;
     margin: 0px;
     margin-bottom: 20px;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .checkboxes-list{
     list-style: none;
@@ -721,6 +742,16 @@ h4{
     height: 22px;
     background-position: -20px -316px;
 }
+.checkboxes-list input:disabled+label::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-position: -20px -1884px;
+}
 .checkboxes-list input:checked+label::before{
     content: "";
     position: absolute;
@@ -730,6 +761,16 @@ h4{
     width: 26px;
     height: 22px;
     background-position: -20px -378px;
+}
+.checkboxes-list input:checked:disabled+label::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+    background-position: -20px -1946px;
 }
 .checkboxes-list input{
     display: none;
@@ -866,6 +907,10 @@ h4{
     display: inline-block;
     vertical-align: top;
     color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .found{
     margin-top: 28px;
@@ -921,6 +966,15 @@ h4{
 .sorting-type .sorting-active{
     color: #81b3d2;
     border-bottom: none;
+    cursor: text;
+}
+.sorting-type .sorting-active:hover{
+    color: #81b3d2;
+    border-bottom: none;
+}
+.sorting-type .sorting-active:active{
+    color: #81b3d2;
+    border-bottom: none;
 }
 .sorting-icon{
     float: right;
@@ -972,6 +1026,13 @@ h4{
 }
 .sorting-delta .delta-active{
     background-position: -20px -490px;
+    cursor: text;
+}
+.sorting-delta .delta-active:hover{
+    background-position: -20px -490px;
+}
+.sorting-delta .delta-active:active{
+    background-position: -20px -490px;
 }
 .hotel{
     border-bottom: 1px solid #e5e5e5;
@@ -998,14 +1059,27 @@ h4{
 }
 .description-hotel-link h4:hover{
     color: #81b3d2;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .description-hotel-link h4:active{
     color: #cacaca;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .description-hotel h4{
     margin: 0px;
     margin-top: 25px;
     margin-bottom: 7px;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans", "Calibri", sans-serif;
 }
 .description-hotel-more{
     display: inline-block;
