@@ -17,8 +17,8 @@ body{
 }
 .clearfix::after{
     content: "";
-    display:table;
-    clear:both;
+    display: table;
+    clear: both;
 }
 .main-block{
     width: 1200px;
@@ -700,7 +700,7 @@ body{
     font-weight: normal;
 }
 .form-checkboxes-left{
-    margin-right: 2px;
+    margin-right: 3px;
 }
 .form-checkboxes h4{
     color: #ffffff;
@@ -735,6 +735,8 @@ body{
 .checkboxes-list input+label::before{
     content: "";
     position: absolute;
+    top: -2px;
+    left: 0px;
     display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
@@ -745,6 +747,8 @@ body{
 .checkboxes-list input:disabled+label::before{
     content: "";
     position: absolute;
+    top: -2px;
+    left: 0px;
     display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
@@ -755,6 +759,8 @@ body{
 .checkboxes-list input:checked+label::before{
     content: "";
     position: absolute;
+    top: -2px;
+    left: 0px;
     display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
@@ -765,6 +771,8 @@ body{
 .checkboxes-list input:checked:disabled+label::before{
     content: "";
     position: absolute;
+    top: -2px;
+    left: 0px;
     display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
@@ -783,7 +791,7 @@ body{
 }
 .range-filter span{
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -835,6 +843,8 @@ body{
     font: inherit;
     background: none;
     border: none;
+    font-size: 14px;
+    line-height: 21px;
 }
 .range-controls{
     position: relative;
